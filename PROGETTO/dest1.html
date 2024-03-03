@@ -1,24 +1,38 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Blog Viaggi</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-</head>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
 <body>
 
-    <header>
-        <a href="index.html" class = "logo">Blog di Viaggi</a>
-        <ul id = "menu-principale">
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="Destinazioni.html">Destinazioni</a></li>
-            <li><a href="consigli.html">Consigli</a></li>
+    <div class="header">
+        <div class="logo"></div>
+        <img src="logo.png" alt="" width="110" height="110">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="guidelines.html">Guidelines</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
-
-    </header>
+        <div class="cta">
+            <a href="" class="button">contatti</a>
+        </div>    
+        <div class="hamburgher">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
     <h1>Le 5 località più belle da visitare in Sardegna</h1>
 
@@ -74,6 +88,25 @@
     </main>
 
     <footer> Copyright - P.iva 0000 000 000 - N.tel 333 33 3333 - info@blogviaggi.com</footer>
-</body>
 
+
+
+
+            <!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+    /*svolge questa cosa solo quando il documento è ready*/
+    $( document ).ready(function() {
+
+        /*open panel*/
+        $(".hamburgher").on('click', function() {
+            $(".menu").toggleClass("menu--open");
+        });
+        
+    });
+</script>
+
+
+</body>
 </html>

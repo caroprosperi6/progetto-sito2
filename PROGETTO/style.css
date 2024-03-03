@@ -139,16 +139,4 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 
 
 
-/*
-h1{
-    font-family: Lucida Handwriting;
-}
-
-header{background:#456659; padding: 15px 10px 15px 15px; width: 100% ; margin: 15px; border: 3px solid black}
-
-#menu-principale{text-align: center;}
-#menu-principale li{display: inline;}
-#menu-principale li a{border: 2px solid white; margin: 30px;}
-
-.img-res{width: 100%;height: auto;}
-*/
+main{padding-top: 150px;}
