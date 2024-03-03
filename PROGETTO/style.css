@@ -1,15 +1,145 @@
-*{box-sizing: border-box;}
-body{
-    background: #dbdbdb;
-    font-family: Garamond;
+/*base style*/
+
+
+body{font-family: 'inter',sans-serif;font-size: 16px;background-color: #364037;}
+
+a{text-decoration: none;color: #364037;}
+
+h1,h2,h3,h4,h5,p{color: #faf7f0;padding-bottom: 30px;}
+
+footer{color: black;}
+
+p{line-height: 28px;color: #666;font-weight: 300;}
+
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 16px;}    /*font di default*/
+
+.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+.button{padding:18px 28px; background:#faf7f0 ;}
+
+
+/*quello che c'è in questa query va apllicata solo in dispositivi con schermo di massimo 768px*/
+/*solo su mobile*/
+@media (max-width:768px){
+
+    .big-text{font-size: 40px;}
 }
 
-p, h1, h2, h3, footer, li{color: black}
+/*Header*/
 
-a{text-decoration: none;}
+.header{
+    
+    width: 100%;
+    position: fixed; /*posizionamento che mi imposta fisso sullo schermo anche se si scrolla*/
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px;
+    display: flex;
+    max-width: 1350px;
 
-.logo{text-align: center; width: 100%; display: block; font-size: 20px;}
+    /*background: #364037;*/
+}
 
+.logo{z-index: 1;}
+
+.menu{
+    width: 100%;
+   z-index: 0;
+}
+
+.menu li{display: inline-block;}
+.menu li a{color: #faf7f0 ;padding: 15px;display: block;}
+
+.hamburgeher{display: none;}
+
+/*impostazioni degli oggetti del sito su uno schermo mobile*/
+
+@media (max-width:768px){
+
+    .cta{display: none;}
+
+    .menu{position: absolute;background: #faf7f0; top: 0px;right:-100%;height: 100vh;padding-top: 80px;}
+    .menu li a{color: black;}
+    .menu li{display: block;}
+    .menu li{padding: 15px 30px;font-size: 20px;}
+
+    .menu--open{right:0%;}
+
+    .hamburgher{
+        display: block;
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+    .hamburgher span{background: black;height: 4px;width: 100%;display: block;margin-bottom: 5px;}
+}
+
+/* Hero*/
+
+.hero{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.90)),
+    url('paesaggio.avif') no-repeat center center;
+    background-size: cover;
+}
+
+.hero__content{
+
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+.hero__content h1,
+.hero__content p{color: #faf7f0;}
+
+
+/* Poster */
+.poster{
+    display: flex;
+    height: 100vh;
+    border: 1px solid red;
+    width: 100%;
+    align-items: center;
+}
+
+.poster__img{width: 65%;height: 100%;}
+
+.poster__img img{object-fit: cover;width: 100%;height: 100%;}
+.poster__content{width: 35%;padding: 50px;}
+
+
+
+
+
+
+
+
+
+/*fare applicare il padding agli elementi in modo tale da non avere problemi di sovrapposizione di elementi*/ 
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+
+
+
+
+/*
 h1{
     font-family: Lucida Handwriting;
 }
@@ -21,3 +151,4 @@ header{background:#456659; padding: 15px 10px 15px 15px; width: 100% ; margin: 1
 #menu-principale li a{border: 2px solid white; margin: 30px;}
 
 .img-res{width: 100%;height: auto;}
+*/
