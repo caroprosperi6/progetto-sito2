@@ -11,20 +11,23 @@ footer{color: black;}
 
 p{line-height: 28px;color: #666;font-weight: 300;}
 
+.enormous-text{font-size: 100px;font-weight: 900;}
 .big-text{font-size: 70px;font-weight: 900;}
 .med-text{font-size: 40px;}
 .normal-text{font-size: 20px;}
 .small-text{font-size: 16px;}    /*font di default*/
 
-.intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
+.intro-text{text-transform: uppercase;font-size: 40px;font-weight: bold;}
 .button{padding:18px 28px; background:#faf7f0 ;}
 
 
 /*quello che c'è in questa query va apllicata solo in dispositivi con schermo di massimo 768px*/
 /*solo su mobile*/
 @media (max-width:768px){
+    .enormous-text{font-size: 70px;}
+    .big-text{font-size: 30px;}
+    .intro-text{font-size: 30px;}
 
-    .big-text{font-size: 40px;}
 }
 
 
@@ -53,10 +56,10 @@ p{line-height: 28px;color: #666;font-weight: 300;}
    z-index: 0;
 }
 
-.menu li{display: inline-block;}
+.menu li{display: inline-block;font-size: 20px;}
 .menu li a{color: #faf7f0 ;padding: 15px;display: block;}
 
-.hamburgeher{display: none;}
+.hamburgher{display: none;}
 
 /*impostazioni degli oggetti del sito su uno schermo mobile*/
 
