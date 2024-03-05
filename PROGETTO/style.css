@@ -3,21 +3,239 @@ body{
     background: #ddebea;
     font-family: Garamond;
 }
+/*base style*/
 
-p, h1, h2, h3, footer, li{color: black}
 
-a{text-decoration: none;}
+body{font-family: 'inter',sans-serif;font-size: 16px;background-color: #364037;}
 
-.logo{text-align: center; width: 100%; display: block; font-size: 20px;}
+a{text-decoration: none;color: #364037;}
 
-h1{
-    font-family: Lucida Handwriting;
+h1,h2,h3,h4,h5,p{color: #faf7f0;padding-bottom: 30px;}
+
+footer{color: black;}
+
+p{line-height: 28px;color: #666;font-weight: 300;}
+
+.enormous-text{font-size: 100px;font-weight: 900;}
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 16px;}    /*font di default*/
+
+.intro-text{text-transform: uppercase;font-size: 40px;font-weight: bold;}
+.button{padding:18px 28px; background:#faf7f0 ;}
+
+
+/*quello che c'è in questa query va apllicata solo in dispositivi con schermo di massimo 768px*/
+/*solo su mobile*/
+@media (max-width:768px){
+    .enormous-text{font-size: 70px;}
+    .big-text{font-size: 30px;}
+    .intro-text{font-size: 30px;}
+
 }
 
-header{background:#456659; padding: 15px 10px 15px 15px; width: 100% ; margin: 15px; border: 3px solid black}
 
-#menu-principale{text-align: center;}
-#menu-principale li{display: inline;}
-#menu-principale li a{border: 2px solid white; margin: 30px;}
 
-.img-res{width: 100%;height: auto;}
+
+/*Header*/
+
+.header{
+    
+    width: 100%;
+    position: fixed; /*posizionamento che mi imposta fisso sullo schermo anche se si scrolla*/
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px;
+    display: flex;
+    max-width: 1350px;
+
+    /*background: #364037;*/
+}
+
+.logo{z-index: 1;}
+
+.menu{
+    width: 100%;
+   z-index: 0;
+}
+
+.menu li{display: inline-block;font-size: 20px;}
+.menu li a{color: #faf7f0 ;padding: 15px;display: block;}
+
+.hamburgher{display: none;}
+
+/*impostazioni degli oggetti del sito su uno schermo mobile*/
+
+@media (max-width:768px){
+
+    .cta{display: none;}
+
+    .menu{position: absolute;background: #faf7f0; top: 0px;right:-100%;height: 100vh;padding-top: 80px;}
+    .menu li a{color: black;}
+    .menu li{display: block;}
+    .menu li{padding: 15px 30px;font-size: 20px;}
+
+
+    .menu--open{right:0%;}
+
+    .hamburgher{
+        display: block;
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+    .hamburgher span{background: black;height: 4px;width: 100%;display: block;margin-bottom: 5px;}
+}
+
+/* Hero*/
+
+.hero{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.90)),
+    url('paesaggio.avif') no-repeat center center;
+    background-size: cover;
+}
+
+.hero__content{
+
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+
+.hero__content h1,
+.hero__content p{color: #faf7f0;}
+
+
+/* Poster */
+.poster{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.poster__img{width: 100%;height: 100%;}
+.poster__img img{object-fit: cover;width: 100%;height: 100%;}
+.poster__content{width: 35%;padding: 50px;}
+
+
+@media (max-width: 768px) {
+    .poster{flex-wrap: wrap;height: auto;}
+    .poster__img img,
+    .poster__content{width: 100%;}
+
+}
+
+
+
+/* BG Cover */
+
+.bg-cover{
+    display: flex;
+    padding: 100px 0px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.7)),
+    url('paesaggio.avif') no-repeat center center;
+    background-size: cover;
+}
+
+.bg-cover__text{width: 50%;padding: 30px;}
+.bg-cover__title{width: 50%;padding: 50px;display: flex;align-items: center;}
+
+@media (max-width: 768px) {
+    .bg-cover{flex-wrap: wrap;height: auto;}
+    .bg-cover__text,
+    .bg-cover__title{width: 50%;}
+}
+
+
+
+
+
+/*Grid*/
+.grid{display: flex;max-width: 1350px;padding: 0px 30px;margin: 0 auto;}
+.grid .col{width: 100%;}
+
+@media (max-width: 768px) {
+    .grid{flex-wrap: wrap;}
+}
+
+
+/* Caurousel */
+
+.main-carousel{ padding: 40px 0px;}
+.carousel-cell{
+    height: 250px;
+    width: 250px;
+    background: #faf7f0;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align: center;
+    margin-right:  40px;
+}
+
+
+/* Panel Blue */
+
+.panel-blue{background-color: #faf7f0;padding: 100px 30px;}
+.panel-blue__text{display: flex;align-items: center;}
+.dot{
+    height: 250px;
+    width: 250px;
+    background-color: #364037;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+/* Footer */
+
+.footer{
+    background: #364037;
+    padding: 150px 0px;
+}
+
+
+
+
+
+
+main{padding-top: 150px;}
+
+/* Helpers*/
+.mt-1{margin-top: 50px;}
+.mt-2{margin-top: 100px;}
+.mt-3{margin-top: 150px;}
+
+.mr-1{margin-right: 50px;}
+
+.tw{color: #faf7f0;}
+.tg{color: #364037;}
+
+/*fare applicare il padding agli elementi in modo tale da non avere problemi di sovrapposizione di elementi*/ 
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+
+
+
+
+
