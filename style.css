@@ -8,7 +8,7 @@ body{
 
 body{font-family: 'inter',sans-serif;font-size: 16px;background-color: #364037;}
 
-a{text-decoration: none;color: #364037;}
+a{text-decoration: none;color: white;}
 
 h1,h2,h3,h4,h5,p{color: #faf7f0;padding-bottom: 30px;}
 
@@ -97,7 +97,7 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     width: 100%;
     align-items: center;
     background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.90)),
-    url('paesaggio.avif') no-repeat center center;
+    url('media/immagini/paesaggio.avif') no-repeat center center;
     background-size: cover;
 }
 
@@ -230,7 +230,6 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 
 
   
-}
 
 
 /* Panel Blue */
