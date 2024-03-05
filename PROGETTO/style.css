@@ -23,14 +23,12 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 
 /*quello che c'è in questa query va apllicata solo in dispositivi con schermo di massimo 768px*/
 /*solo su mobile*/
+
 @media (max-width:768px){
     .enormous-text{font-size: 70px;}
     .big-text{font-size: 30px;}
-    .intro-text{font-size: 30px;}
-
+    .intro-text{font-size: 20px;}
 }
-
-
 
 
 /*Header*/
@@ -124,7 +122,7 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 .poster__content{width: 35%;padding: 50px;}
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .poster{flex-wrap: wrap;height: auto;}
     .poster__img img,
     .poster__content{width: 100%;}
@@ -146,7 +144,7 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 .bg-cover__text{width: 50%;padding: 30px;}
 .bg-cover__title{width: 50%;padding: 50px;display: flex;align-items: center;}
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .bg-cover{flex-wrap: wrap;height: auto;}
     .bg-cover__text,
     .bg-cover__title{width: 50%;}
@@ -174,8 +172,59 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     background: #faf7f0;
     border-radius: 100%;
     line-height: 250px;
-    text-align: center;
-    margin-right:  40px;
+    text-align:center;
+    background-image: url('la-pelosa.jpeg');
+    background-size: cover  ;
+    margin-right: 20px; 
+    transition: 1.5s;
+    margin: 0 20px;
+}
+
+.carousel-cell_1{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align:center;
+    background-image: url('../PROGETTO/arcipelago-La-Maddalena.jpeg');
+    background-size: cover  ;
+    margin-right: 20px; 
+    transition: 1.5s;
+    margin: 0 20px;
+}
+
+.carousel-cel_2{
+    height: 250px;
+    width: 250px;
+    background: #faf7f0;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align:center;
+    background-image: url('la-pelosa.jpeg');
+    background-size: cover  ;
+    margin-right: 20px; 
+    transition: 1.5s;
+    margin: 0 20px;
+}
+
+.carousel-cell_{
+    height: 250px;
+    width: 250px;
+    background: #faf7f0;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align:center;
+    background-image: url('la-pelosa.jpeg');
+    background-size: cover  ;
+    margin-right: 20px; 
+    transition: 1.5s;
+    margin: 0 20px;
+}
+.main-carousel{padding: 40px 0px 40px 0; }
+
+
+
+  
 }
 
 
