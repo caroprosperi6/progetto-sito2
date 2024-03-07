@@ -1,9 +1,12 @@
 *{box-sizing: border-box;}
+body{background: #ddebea;}
+
 
 /*base style*/
-.body{font-family: 'inter',sans-serif;font-size: 16px;background-color: #364037;}
 
-a{color: #faf7f0;}
+body{font-family: 'inter',sans-serif;font-size: 16px;background-color: #364037;}
+
+a{text-decoration:none;color: #faf7f0;}
 h1,h2,h3,h4,h5,p{color: #faf7f0;padding-bottom: 30px;}
 
 footer{color: black;}
@@ -29,6 +32,7 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 }
 
 
+
 /*Header*/
 
 .header{
@@ -40,15 +44,14 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     transform: translate(-50%);
     padding: 30px;
     display: flex;
-    max-width: 1350px;}
+    max-width: 1350px;
+}
 
 .logo{z-index: 1;}
 
 /*menu*/
-.menu{
-    width: 100%;
-    z-index: 0;
-}
+
+.menu{width: 100%;z-index: 0;}
 
 .menu li{display: inline-block;font-size: 20px;}
 .menu li a{color: #faf7f0 ;padding: 15px;display: block;}
@@ -80,10 +83,12 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     .hamburger span{background: black;height: 4px;width: 100%;display: block;margin-bottom: 5px;}
 }
 
+
+
 /* Hero*/
 
 .hero{
-    height: 100vh;
+    height: 70vh;
     display: flex;
     width: 100%;
     align-items: center;
@@ -98,6 +103,7 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     max-width: 1350px;
     margin: 0 auto;
     padding: 30px;
+    padding-top: 100px;
 }
 
 
@@ -105,6 +111,9 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 .hero__content p{color: #faf7f0;}
 
 .hero__content a{color:#faf7f0;}
+
+.hero--about{padding-top: 350px;}
+
 
 /* Paragraph*/
 
@@ -117,23 +126,25 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     margin: 60px auto; 
     padding: 20px; 
     background-color: #424d43; 
-    color: #ffffff; 
     text-align: center; 
 }
+
+
 
 
 /* Poster */
 
 .poster{
+
     display: flex;
     height: 100vh;
     width: 100%;
-    margin-bottom: 20px;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.poster__img{width: 100%;height: 100%;}
+.poster__img{width: 75%;height: 85%;}
 .poster__img img{object-fit: cover;width: 100%;height: 100%;}
 .poster__content{width: 35%;padding: 50px;}
 
@@ -142,8 +153,8 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     .poster{flex-wrap: wrap;height: auto;}
     .poster__img img,
     .poster__content{width: 100%;}
-
 }
+
 
 
 
@@ -182,7 +193,7 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 
 
 
-/* Carousel */
+/* Caurousel */
 
 .main-carousel{ padding: 40px 0px;}
 
@@ -199,17 +210,25 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     transition: 1.5s;
     margin: 0 20px;
 }
-#carousel-cell_1{background-image: url('media/immagini/arcipelago-La-Maddalena.jpeg');}
-#carousel-cell_2{background-image: url('media/immagini/Riviera-del-Corallo.jpeg');}
-#carousel-cell_3{background-image: url('media/immagini/porto-cervo.jpeg');}
-#carousel-cell_4{background-image: url('media/immagini/sardegnahome.jpg');}
-#carousel-cell_5{background-image: url('media/immagini/settimanabiancasci.jpeg');}
-
-
+#carousel-cell_1{
+    background-image: url('media/immagini/arcipelago-La-Maddalena.jpeg');
+}
+#carousel-cell_2{
+    background-image: url('media/immagini/Riviera-del-Corallo.jpeg');
+}
+#carousel-cell_3{
+    background-image: url('media/immagini/porto-cervo.jpeg');
+}
+#carousel-cell_4{
+    background-image: url('media/immagini/sardegnahome.jpg');
+}
+#carousel-cell_5{
+    background-image: url('media/immagini/settimanabiancasci.jpeg');
+}
 
 /* Panel Blue */
 
-.panel-blue{padding: 100px 30px;}
+.panel-blue{background-color: #faf7f0;padding: 100px 30px;}
 .panel-blue__text{display: flex;align-items: center;}
 .dot{
     height: 250px;
@@ -231,9 +250,15 @@ p{line-height: 28px;color: #666;font-weight: 300;}
     padding: 150px 0px;
 }
 
-.main{padding-top: 150px;}
+main{padding-top: 150px;}
 
-/* Helpers */
+.im-travel h1{text-align: center;}
+.im-travel img{width: 100%; height: 50vh;}
+
+@media (max-width:768px){
+
+}
+/* Helpers*/
 .mt-1{margin-top: 50px;}
 .mt-2{margin-top: 100px;}
 .mt-3{margin-top: 150px;}
@@ -243,6 +268,10 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 .tw{color: #faf7f0;}
 .tg{color: #364037;}
 
+.fl{float: left;margin-right: 10px;}
+.fr{float: right;margin-right: 10px;}
+
+
 
 /*fare applicare il padding agli elementi in modo tale da non avere problemi di sovrapposizione di elementi*/ 
 *,
@@ -250,6 +279,5 @@ p{line-height: 28px;color: #666;font-weight: 300;}
 *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+        box-sizing: border-box;
 }
-
