@@ -6,12 +6,12 @@ body{background: #ddebea;}
 
 body{font-family: 'inter',sans-serif;font-size: 16px;background-color: #364037;}
 
-a{text-decoration:none;color: #faf7f0;}
-h1,h2,h3,h4,h5,p{color: #faf7f0;padding-bottom: 30px;}
+a{text-decoration:none;color: #000000;}
+h1,h2,h3,h4,h5{color: #faf7f0;padding-bottom: 30px;}
 
 footer{color: black;}
 
-p{line-height: 28px;color: #666;font-weight: 300;}
+p{line-height: 28px;color: #9b9898;font-weight: 300;}
 
 .enormous-text{font-size: 100px;font-weight: 900;}
 .big-text{font-size: 70px;font-weight: 900;}
