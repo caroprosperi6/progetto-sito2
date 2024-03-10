@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
 
     <div class="header">
         <div class="logo"></div>
-        <img src="../media/immagini/logo.png" alt="" width="110" height="110">
+            <img src="../media/immagini/logo.png" alt="" width="110" height="110">
         <ul class="menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -34,11 +37,56 @@
         </div>
     </div>
 
-    
+    <div class="hero">
+        <div class="hero__content reveal">
+            <p class="intro-text">Benvenuti nel nostro blog di viaggi!</p>
+            <h1 class="enormous-text">Blog Viaggi - Vero&Caro</h1>
+        </div>
+
+    </div>
 
     <main>
+        <h1>Destinazioni</h1>
+
+        <h2>Le 5 località più belle da visitare in Sardegna </h2>
+
+        <div class="im-travel clear-fix">
+                
+                <div class="img-container float-left">
+                    <img src="../media/immagini/sardegnahome.jpg" alt="">
+                </div>
+
+                <div class="im-travel-content ">
+                    <p>
+                        In questo post ti voglio portare in un viaggio su un’isola che a me sta particolarmente a cuore: la
+                        Sardegna. Ho scritto diversi post in precedenza sulla Sardegna, ma in questo articolo mi voglio
+                        concentrare sui 5 posti più belli da visitare in Sardegna per un weekend oppure per un viaggio di alcuni
+                        giorni.
+                    </p>
+                    <p>
+                        La Sardegna è un’isola che incanta e ispira, con la sua bellezza senza tempo e il suo impegno per il
+                        turismo
+                        ecosostenibile. La Sardegna non è solo una meta turistica, ma un rifugio per coloro che cercano una fuga
+                        dal
+                        caos urbano e desiderano immergersi in un ambiente semplice, raffinato e autentico.
+                        <a href="dest1.html">Continua</a>
+                    </p>
+                </div>
+            
+            </div>
+        <!-- <div class="img-container float-left">
+            <img src="../media/immagini/sardegnahome.jpg" alt="">
+        </div> -->
+     
+
+
+
+    </main>
+    
+
+   <!--<main>
         <div class="im-travel fl">
-            <h1 class="big-text">Destinazioni</h1>
+         
 
             <h2>Le 5 località più belle da visitare in Sardegna </h2>
             <img src="../media/immagini/sardegnahome.jpg" alt="">
@@ -70,7 +118,7 @@
 
         </div>
 
-    </main>
+    </main>--> 
     
 <div class="panel-blue mt-1">
     <div class="grid panel-blue">
@@ -103,6 +151,7 @@
             <!--jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     /*svolge questa cosa solo quando il documento è ready*/
     $( document ).ready(function() {
@@ -113,10 +162,11 @@
         });
         
     });
+
     ScrollReveal().reveal('.reveal', { distance: '100px',  duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600});
     ScrollReveal().reveal('.zoom', {duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200,  scale: 0.65, mobile: false});
-</script>
 
+</script>
 
 </body>
 </html>

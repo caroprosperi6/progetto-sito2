@@ -6,7 +6,7 @@ body{background: #ddebea;}
 
 body{font-family: 'inter',sans-serif;font-size: 16px;background-color: #364037;}
 
-a{text-decoration:none;color: #000000;}
+
 h1,h2,h3,h4,h5{color: #faf7f0;padding-bottom: 30px;}
 
 footer{color: black;}
@@ -24,19 +24,21 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     display: inline-block;
     padding:18px 28px; 
     text-decoration: none;
+    color: #faf7f0;
     background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     position: relative;
     transition: all 1s ease-in-out;
 }
 
 
+
 /*quello che c'è in questa query va appllicata solo in dispositivi con schermo di massimo 768px*/
 /*solo su mobile*/
 
 @media (max-width:768px){
-    .enormous-text{font-size: 50px;}
-    .big-text{font-size: 30px;}
-    .intro-text{font-size: 15px;}
+    .enormous-text{font-size: 60px;}
+    .big-text{font-size: 40px;}
+    .intro-text{font-size: 20px;}
 
     .button{
         display: inline-block;
@@ -74,7 +76,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 }
 
 .menu li{display: inline-block;font-size: 20px;}
-.menu li a{color: #faf7f0 ;padding: 15px;display: block;}
+.menu li a{text-decoration: none;color: #faf7f0 ;padding: 15px;display: block;}
 
 .hamburger{display: none;}
 
@@ -131,7 +133,9 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 .hero__content h1,
 .hero__content p{color: #faf7f0;}
 
-.hero__content a{color:#faf7f0;}
+.hero__content a{
+    text-decoration: none;
+    color:#faf7f0;}
 
 .hero--about{padding-top: 350px;}
 
@@ -149,44 +153,6 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     background-color: #424d43; 
     text-align: center; 
 }
-
-
-@media (max-width:768px){
-
-    
-    .hero__content{
-    
-        width: 100%;
-        max-width: 1350px;
-        margin: 0 auto;
-        padding: 30px;
-        padding-top: 100px;
-    }
-    
-    
-    .hero__content h1{font-size: ;}
-    .hero__content p{color: #faf7f0;}
-    
-    .hero__content a{color:#faf7f0;}
-    
-    .hero--about{padding-top: 350px;}
-    
-    
-    /* Paragraph*/
-    
-    .paragraph{
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        height: auto; 
-        max-width: 1350px; 
-        margin: 60px auto; 
-        padding: 20px; 
-        background-color: #424d43; 
-        text-align: center; 
-    }
-}
-
 
 
 
@@ -252,7 +218,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 
 /* Caurousel */
 
-.main-carousel{ padding: 40px 0px;}
+.main-carousel{padding: 40px 0px;}
 
 .carousel-cell{
     height: 250px;
@@ -283,6 +249,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     background-image: url('media/immagini/settimanabiancasci.jpeg');
 }
 
+
 /* Panel Blue */
 
 .panel-blue{background-color: #faf7f0;padding: 100px 30px;}
@@ -309,12 +276,52 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 
 main{padding-top: 150px;}
 
-.im-travel h1{text-align: center;}
-.im-travel img{width: 100%; height: 50vh;}
-
-@media (max-width:768px){
-
+.im-travel{
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    display: flex;
 }
+.im-travel-content{
+    width: 60%;
+    float: left; 
+    padding: 5%;
+}
+.img-container{
+    width: 40%;
+    float: left;
+    padding: 5%;
+}
+.img-container img{width: 120%;}
+
+/*.sidebar a{
+    text-decoration: none;  
+    color: #364037;
+} */
+.clear-fix::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+* html.clearfix {zoom: 1;}
+*:first-child+html.clear-fix{zoom: 1;}
+
+
+/*
+.im-travel h1{text-align: center;}
+.im-travel img{width: 80%; height: 50vh;}
+*/
+
+/*Carousel nel contact*/
+
+#carousel-cell_6{
+    background-image: url('media/immagini/about.jpeg');
+}
+
+
 /* Helpers*/
 .mt-1{margin-top: 50px;}
 .mt-2{margin-top: 100px;}
