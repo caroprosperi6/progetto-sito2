@@ -151,7 +151,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     text-decoration: none;
     color:#faf7f0;}
 
-.hero--about{padding-top: 350px;}
+.hero--about{padding-top: 300px;}
 
 @media (max-width: 768px) {
     .hero{height: 40vh;}
