@@ -199,6 +199,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 
 
 
+
 /* BG Cover */
 
 .bg-cover{
@@ -321,6 +322,24 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 
 #carousel-cell_6{
     background-image: url('media/immagini/about.jpeg');
+}
+#carousel-cell_7{
+    background-image: url('media/immagini/dueamiche.webp');
+}
+#carousel-cell_8{
+    background-image: url('media/immagini/passaporti.webp');
+}
+
+/* About */
+
+
+.poster__content{width: 35%;padding: 50px;}
+
+@media (max-width: 1400px) {
+    .poster{flex-wrap: wrap;height: auto;}
+    .poster__img{width: 100%;height: 100%;}
+    .poster__img img,
+    .poster__content{width: 100%;}
 }
 
 /* Footer */
