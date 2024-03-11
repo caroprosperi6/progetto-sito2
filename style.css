@@ -298,14 +298,48 @@ p{
 }
 
 #carousel-cell_4{
-    background-image: url('media/immagini/trekkingstelvio.jpeg');
+    background-image: url('media/immagini/cassiano.jpg');
 }
 
 #carousel-cell_5{
     background-image: url('media/immagini/settimanabiancasci.jpeg');
 }
 
+#carousel-cell_10{
+    background-image: url('media/immagini/la-pelosa.jpeg');
+}
 
+#carousel-cell_11{
+    background-image: url('media/immagini/cornara.jpg');
+}
+
+#carousel-cell_12{
+    background-image: url('media/immagini/percorsodellamemoria.jpg');
+}
+
+#carousel-cell_13{
+    background-image: url('media/immagini/trekkingperiplo.jpeg');
+}
+
+#carousel-cell_14{
+    background-image: url('media/immagini/cinquevalli.jpg');
+}
+
+#carousel-cell_15{
+    background-image: url('media/immagini/settimanabiancahome.jpeg');
+}
+
+#carousel-cell_16{
+    background-image: url('media/immagini/porto-cervo.jpeg');
+}
+
+#carousel-cell_17{
+    background-image: url('media/immagini/puez.jpg');
+}
+
+#carousel-cell_18{
+    background-image: url('media/immagini/trekkingstelvio.jpeg');
+}
 /* Panel Blue */
 
 .panel-blue{background-color: #faf7f0;padding: 100px 30px;}
