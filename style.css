@@ -204,7 +204,18 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 }
 
 
-
+.contact1{
+    display: flex;
+    height: 100vh;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
 
 
 /*BG Cover*/
@@ -283,7 +294,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 .dot{
     height: 250px;
     width: 250px;
-    background-color: #364037;
+    background-image: url('media/immagini/mappamondo.jpeg');
     border-radius: 100%;
     line-height: 250px;
     text-align: center;
@@ -292,6 +303,18 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     margin-bottom: 40px;
 }
 
+#dot_1{
+    background-image: url('media/immagini/bandiere.webp');
+}
+
+#dot_2{
+    background-image: url('media/immagini/bandiere.webp');
+}
+#dot_3{
+    background-image: url('media/immagini/bandiere.webp');
+}
+
+.maain{display: flex;}
 
 .img-container{
     width: 40%;
@@ -306,13 +329,15 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 
     .img-container{
         width: 40%;
-        height: 70vh;
+        /* height: 70vh; */
         float: left;
         margin: 10px;
         flex-wrap: wrap;
     }
     .img-container img{width: 440px; height:245px;}
 }
+
+.clearf{clear:both}
 
 .clear-fix::after{
     visibility: hidden;
@@ -369,6 +394,14 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     background: #364037;
     padding: 150px 0px;
 }
+
+/* @media(max-width:768px){
+
+    .footer{
+        height: 70px;
+        width: 70px;
+    }
+} */
 
 /* Helpers*/
 .mt-1{margin-top: 50px;}
