@@ -268,7 +268,6 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     margin-right: 20px; 
     transition: 1.5s;
     margin: 0 20px;
-    z-index: 0;
 }
 #carousel-cell_1{
     background-image: url('media/immagini/arcipelago-La-Maddalena.jpeg');
