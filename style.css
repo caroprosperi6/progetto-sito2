@@ -278,7 +278,7 @@ p{
     border-radius: 100%;
     line-height: 250px;
     text-align:center;
-    background-image: url('media/immagini/la-pelosa.jpeg');
+    background-image: url('media/immagini/sardegnahome.jpg');
     background-size: cover;
     margin-right: 20px; 
     transition: 1.5s;
@@ -294,18 +294,16 @@ p{
 }
 
 #carousel-cell_3{
-    background-image: url('media/immagini/porto-cervo.jpeg');
+    background-image: url('media/immagini/trekkinghome.jpeg');
 }
 
 #carousel-cell_4{
-    background-image: url('media/immagini/sardegnahome.jpg');
+    background-image: url('media/immagini/trekkingstelvio.jpeg');
 }
 
 #carousel-cell_5{
     background-image: url('media/immagini/settimanabiancasci.jpeg');
 }
-
-
 
 
 /* Panel Blue */
