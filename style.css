@@ -76,7 +76,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 .menu li{display: inline-block;font-size: 20px;}
 .menu li a{
     text-decoration: none;
-    color: #faf7f0 ;
+    color: grey ;
     padding: 15px;
     display: block;}
 
@@ -328,6 +328,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     float: left;
     margin: 10px;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 .img-container img{width: 100%; height: auto;}
