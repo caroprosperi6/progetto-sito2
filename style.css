@@ -294,7 +294,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     height: 250px;
     width: 250px;
     background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
-    url('media/immagini/cartina.jpg') no-repeat center center;
+    url('media/immagini/Continents.jpeg') no-repeat center center;
     border-radius: 100%;
     line-height: 250px;
     text-align: center;
@@ -302,20 +302,24 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     margin-right: 40px;
     margin-bottom: 40px;
     font-weight: bold;
-    color: #b0acac;
+    color: #ffffff;
     
 }
 
 #dot_1{
-    background-image: url('media/immagini/bandiere.webp');
+    background-image: url('media/immagini/Continents.jpeg');
 }
 
 #dot_2{
-    background-image: url('media/immagini/bandiere.webp');
+    background-image: url('media/immagini/mondi.jpeg');
 }
 #dot_3{
-    background-image: url('media/immagini/bandiere.webp');
+    background-image: url('media/immagini/shoes.jpeg');
 }
+#dot_4{
+    background-image: url('media/immagini/backpacks.jpeg');
+}
+
 
 .maain{display: flex;}
 
