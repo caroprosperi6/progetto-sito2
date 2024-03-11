@@ -9,7 +9,7 @@ body{
     font-size: 16px;
     background-color: #364037;
 }
-
+.logo{z-index: 1000;}
 
 h1,h2,h3,h4,h5,a{color: #faf7f0;padding-bottom: 30px;}
 
@@ -254,7 +254,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 
 /* Caurousel */
 
-.main-carousel{padding: 40px 0px;}
+.main-carousel{padding: 40px 0px; z-index: 10;} 
 
 .carousel-cell{
     height: 250px;
@@ -293,13 +293,17 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
 .dot{
     height: 250px;
     width: 250px;
-    background-image: url('media/immagini/mappamondo.jpeg');
+    background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
+    url('media/immagini/cartina.jpg') no-repeat center center;
     border-radius: 100%;
     line-height: 250px;
     text-align: center;
     display: inline-block;
     margin-right: 40px;
     margin-bottom: 40px;
+    font-weight: bold;
+    color: #b0acac;
+    
 }
 
 #dot_1{
