@@ -684,17 +684,6 @@ p {
     }
 }
 
-
-
-/*fare applicare il padding agli elementi in modo tale da non avere problemi di sovrapposizione di elementi*/
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 /* tabella subscribing */
 /* stile e bordo*/
 form {
@@ -733,3 +722,15 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.8;
 }
+
+
+
+/*fare applicare il padding agli elementi in modo tale da non avere problemi di sovrapposizione di elementi*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
