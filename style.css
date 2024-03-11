@@ -11,7 +11,7 @@ body{
 }
 
 
-h1,h2,h3,h4,h5, a{color: #faf7f0;padding-bottom: 30px;}
+h1,h2,h3,h4,h5,a{color: #faf7f0;padding-bottom: 30px;}
 
 footer{color: black;}
 
@@ -257,6 +257,7 @@ p{line-height: 28px;color: #9b9898;font-weight: 300;}
     margin-right: 20px; 
     transition: 1.5s;
     margin: 0 20px;
+    z-index: 0;
 }
 #carousel-cell_1{
     background-image: url('media/immagini/arcipelago-La-Maddalena.jpeg');
