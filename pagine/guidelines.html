@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidelines</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo"></div>
+        <img src="../media/immagini/logo.png" alt="" width="110" height="110">
+        <ul class="menu">
+            <li><a href="../index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="travel.html">Travel</a></li>
+            <li><a href="guidelines.html">Guidelines</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+   
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero__content reveal">
+            <p class="intro-text">Guidelines</p>
+            <h1 class="enormous-text">Blog Viaggi - Vero&Caro</h1>
+            <a href="pagine/about.html" class="button normal-text">Scopri di più</a>
+        </div>
+    </div>
+
+    <div class="guidelines">
+        <div class="consigli">
+             <h1 class="big-text">Consigli</h1>
+        </div>
+        <div class="lentiacontatto">
+            <h2> Viaggiare con le Lenti a Contatto - Consigli, Precauzioni e Suggerimenti per un Viaggio Senza Stres </h2>
+            <p> Per molti viaggiatori, la scelta di indossare le lenti a contatto durante i viaggi è una decisione
+                pratica e personale. Le lenti a contatto offrono una chiarezza visiva senza pari e un senso di comodità,
+                specialmente per coloro che preferiscono evitare gli occhiali da vista tradizionali durante i loro
+                viaggi, specialmente quelli più avventurosi.<a href="cons1.html">Continua</a>
+            </p>
+        </div>
+
+    </div>
+
+
+
+   
+
+<main>
+    <div>
+
+        <h2> Viaggiare con le Lenti a Contatto - Consigli, Precauzioni e Suggerimenti per un Viaggio Senza Stres
+        </h2>
+        <img src="../media/immagini/consigli lenti.jpg" alt="">
+        
+        <h2>Viaggiare da soli in Europa: 5 destinazioni e 5 consigli</h2>
+        <img src="../media/immagini/parigihome.jpeg" alt="">
+        <p>Viaggiare da soli in Europa è un modo per trovare del tempo tutto per sé, per capire se si riesce a
+            farcela anche senza gli altri e, quindi, mettersi alla prova ma anche per conoscere persone nuove e,
+            naturalmente, pure posti nuovi in totale libertà senza vincoli e compromessi. <a href="cons2.html">Continua</a></p>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <!-- <p>Copyright - P.iva 0000 000 000 - N.tel 333 33 3333 - info@blogviaggi.com</p> -->
+    <div class="grid">
+        <div class="col reveal">
+            <a href="https://www.facebook.com/?locale=it_IT">
+                <img src="../media/immagini/Facebook.png" alt="" height="110" width="110">
+            </a>
+            <h4 class="normal-text tw mt-1">Segui le nostre avventure!</h4>
+            <p>Facebook</p>
+        </div>
+        <div class="col reveal">
+            <a href="https://www.instagram.com/">
+                <img src="../media/immagini/Instagram.png" alt="" height="110" width="110">
+            </a>
+            <h4 class="normal-text tw mt-1">Segui le nostre avventure!</h4>
+            <p>Instagram</p>
+        </div>
+        <div class="col reveal">
+            <a href="https://twitter.com/?lang=it">
+                <img src="../media/immagini/twitter.png" alt="" height="110" width="110">
+            </a>
+            <h4 class="normal-text tw mt-1">Segui le nostre avventure!</h4>
+            <p>Twitter</p>
+        </div>
+        <div class="col reveal">
+            <a href="https://www.youtube.com/">
+                <img src="../media/immagini/youtube.png" alt="" height="115" width="115">
+            </a>
+            <h4 class="normal-text tw mt-1" >Segui le nostre avventure!</h4>
+            <p>Youtube</p>
+        </div>
+    </div>
+</footer>
+
+   
+
+
+
+            <!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+    /*svolge questa cosa solo quando il documento è ready*/
+    $( document ).ready(function() {
+
+        /*open panel*/
+        $(".hamburger").on('click', function() {
+            $(".menu").toggleClass("menu--open");
+        });
+        
+    });
+    ScrollReveal().reveal('.reveal', { distance: '100px',  duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600});
+    ScrollReveal().reveal('.zoom', {duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200,  scale: 0.65, mobile: false});
+</script>
+
+
+</body>
+</html>
