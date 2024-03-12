@@ -685,6 +685,22 @@ p {
     }
 }
 
+
+/* Go back */
+
+.torna-indietro{
+    float: right;
+    padding: 25px;
+    color: #faf7f0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    transition: all 1s ease-in-out;
+}
+.torna-indietro a{
+    text-decoration: none;
+}
+
+
+
 /* tabella subscribing */
 /* stile e bordo*/
 form {
